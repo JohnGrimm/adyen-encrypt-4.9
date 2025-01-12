@@ -73,7 +73,7 @@ func main() {
 
 	RiskData := adyen_encrypt.GenRiskData()
 
-	fmt.Printf("encryptedCardNumber: %s\nencryptedExpiryMonth: %s\nencryptedExpiryYear: %s\nencryptedSecurityCode: %s\n riskData: %s", encryptedData.EncryptedCardNumber, encryptedData.EncryptedExpiryMonth, encryptedData.EncryptedExpiryYear, encryptedData.EncryptedSecurityCode, RiskData)
+	fmt.Printf("encryptedCardNumber: %s\nencryptedExpiryMonth: %s\nencryptedExpiryYear: %s\nencryptedSecurityCode: %s\nriskData: %s", encryptedData.EncryptedCardNumber, encryptedData.EncryptedExpiryMonth, encryptedData.EncryptedExpiryYear, encryptedData.EncryptedSecurityCode, RiskData)
 }
 ```
 

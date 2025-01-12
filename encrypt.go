@@ -5,7 +5,6 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"log"
 
 	encryptions "github.com/JohnGrimm/adyen-encrypt-4.9/encryption"
 	"github.com/corpix/uarand"
@@ -132,7 +131,6 @@ func (enc *Encryptor) EncryptData(number, expMonth, expYear, cvc string) (ret *A
 
 func GenRiskData() string {
 	ua := uarand.GetRandom()
-	log.Println(ua)
 	null := ""
 	rd := encryptions.NewRiskData(
 		ua,
